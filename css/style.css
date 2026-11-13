@@ -324,6 +324,26 @@ a {
     margin-top: 10px;
 }
 
+/* ==============================
+   会员介绍页面
+   ============================== */
+
+/* 页面主标题 */jielin
+.membership-title {
+    font-size: 46px;
+    margin: 25px 0;
+}
+
+/* 入会条件与加入步骤 */
+.membership-list {
+    padding-left: 25px;
+}
+
+/* 每个项目之间留出距离 */
+.membership-list li {
+    margin-bottom: 15px;
+}
+
 
 /* ==============================
    14. 小屏幕调整
@@ -332,6 +352,10 @@ a {
    ============================== */
 
 @media (max-width: 600px) {
+
+    .membership-title{
+        font-size: : 32px;
+    }
     .hero {
         padding: 65px 20px;
     }
