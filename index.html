@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 让网页按手机屏幕宽度显示 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>APU Esports Club</title>
+
+    <!-- 连接 CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         1. 网站顶部与导航
+         ============================== -->
+    <div class="header">
+
+        <a class="logo" href="index.html">
+            APU <span>ESPORTS</span>
+        </a>
+
+        <!-- 现在先连接首页区域，之后再改成独立页面 -->
+        <div class="nav">
+            <a href="#about">ABOUT</a>
+            <a href="#games">GAMES</a>
+            <a href="#events">EVENTS</a>
+            <a href="#join">JOIN US</a>
+        </div>
+
+    </div>
+
+
+<!-- 首页背景视频区域：只保留一个 hero -->
+<div class="hero">
+
+    <!-- 视频位置：换成真实 MP4 文件的路径 -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="This is EWC 2026.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+
+    <!-- 视频上方的文字：只保留一份 -->
+    <div class="hero-content">
+
+        <p class="small-title">
+            TEAMWORK. PASSION. FAIR PLAY.
+        </p>
+
+        <h1>
+            FIND YOUR TEAM.<br>
+            ENJOY THE GAME.
+        </h1>
+
+        <p class="hero-description">
+            Connect with fellow players, learn new skills
+            and explore esports at APU.
+        </p>
+
+        <a class="button" href="#games">
+            EXPLORE OUR GAMES
+        </a>
+
+    </div>
+
+</div>
+
+    <!-- ==============================
+         3. 社团介绍：白色区域
+         ============================== -->
+    <div id="about" class="section light-section">
+
+        <div class="section-content">
+
+            <p class="section-label">WHO WE ARE</p>
+            <h2>MORE THAN A GAME.</h2>
+
+            <!-- 【照片位置 1】
+                 把自己的照片放入 images 文件夹。
+                 修改 src 为你的照片路径。
+                 alt 改成实际照片的描述。 -->
+            <img class="feature-image"
+                 src="images/about.jpg"
+                 alt="Students practising together at a gaming session">
+
+            <p>
+                APU Esports Club is a student club concept that brings
+                players together through teamwork, learning and
+                friendly competition.
+            </p>
+
+            <p>
+                Our mission is to create a welcoming community
+                where beginners and experienced players can
+                improve together and practise responsible gaming.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+         4. 游戏介绍：黑色区域
+         ============================== -->
+    <div id="games" class="section dark-section">
+
+        <div class="section-content">
+
+            <p class="section-label">CHOOSE YOUR GAME</p>
+            <h2>PLAY. LEARN. IMPROVE.</h2>
+
+            <p>
+                Explore our featured games.
+                Our beginner content focuses on learning VALORANT.
+            </p>
+
+
+            <div class="game-card">
+
+                <!-- 【照片位置 2：VALORANT】
+                     修改下面的 src -->
+                <img class="card-image"
+                     src="images/valorant.jpg"
+                     alt="VALORANT gameplay showing a team-based tactical match">
+
+                <div class="card-content">
+
+                    <h3>VALORANT</h3>
+
+                    <p>
+                        Discover the basics of attacking, defending,
+                        agent roles and team communication.
+                    </p>
+
+                    <p class="tag">
+                        FEATURED BEGINNER GUIDE
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-card">
+
+                <!-- 【照片位置 3：其他游戏】
+                     可以换成你想介绍的游戏。
+                     记得同时修改下面的标题、介绍和 alt。 -->
+                <img class="card-image"
+                     src="images/rocket-league.jpg"
+                     alt="Rocket League cars playing football in an arena">
+
+                <div class="card-content">
+
+                    <h3>ROCKET LEAGUE</h3>
+
+                    <p>
+                        Explore a different kind of team competition
+                        through positioning, passing and coordination.
+                    </p>
+
+                    <p class="tag">
+                        TEAMWORK IN MOTION
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+         5. 视频区域
+         暂时不想放视频，可以删除整个区域。
+         ============================== -->
+    <div class="section video-section">
+
+        <div class="section-content">
+
+            <p class="section-label">WATCH AND DISCOVER</p>
+            <h2>GET INTO THE GAME.</h2>
+
+            <p>
+                Watch our selected introduction to esports
+                or our own beginner gameplay demonstration.
+            </p>
+
+            <!-- 【视频位置】
+                 1. 建立 videos 文件夹。
+                 2. 把视频放进去。
+                 3. 修改 src，例如 videos/intro.mp4。
+                 4. poster 是播放前显示的封面照片。 -->
+            <video class="club-video"
+                   controls
+                   preload="metadata"
+                   poster="images/hero.jpg">
+
+                <source src="videos/hero.mp4"
+                        type="video/mp4">
+
+                Your browser does not support HTML video.
+
+            </video>
+
+            <!-- 根据你实际加入的视频修改这段说明 -->
+            <p class="media-caption">
+                Add your video's title, creator and source here.
+                Provide a short description of its content.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+         6. 社团活动：白色区域
+         ============================== -->
+    <div id="events" class="section light-section">
+
+        <div class="section-content">
+
+            <p class="section-label">OUR COMMUNITY</p>
+            <h2>LEARN WITH YOUR TEAM.</h2>
+
+            <!-- 【照片位置 4：社团或电竞活动】
+                 没有自己的活动照片时，
+                 不要把其他组织的照片说成自己的活动。 -->
+            <img class="feature-image"
+                 src="images/event.jpg"
+                 alt="Illustrative esports practice setup">
+
+            <h3>BEGINNER PRACTICE SESSION</h3>
+
+            <p>
+                A proposed session covering basic controls,
+                team roles and clear communication.
+                New players are welcome.
+            </p>
+
+            <p class="notice">
+                Sample activity for this student project.
+                Date, venue and organiser approval are not confirmed.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+         7. 加入社团入口
+         之后会在这里连接注册页面
+         ============================== -->
+    <div id="join" class="section join-section">
+
+        <div class="section-content">
+
+            <p class="section-label">YOUR NEXT TEAM STARTS HERE</p>
+            <h2>READY TO PLAY TOGETHER?</h2>
+
+            <p>
+                Beginners and experienced players are welcome.
+                Explore our community and find your next teammates.
+            </p>
+
+            <!-- 目前还没有注册页面，所以先说明。
+                 做好 register.html 后，再加入注册链接。 -->
+            <p>
+                Membership form coming in the next development stage.
+            </p>
+
+            <a class="button button-white" href="#about">
+                EXPLORE THE CLUB
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==============================
+         8. 页脚
+         ============================== -->
+    <div class="footer">
+
+        <p class="footer-title">APU ESPORTS CLUB</p>
+
+        <p>
+            Student assignment concept.
+            Not an official APU website.
+        </p>
+
+        <p>
+            Game names and supplied game media belong
+            to their respective owners.
+        </p>
+
+        <a href="#top"
+           onclick="window.scrollTo(0, 0); return false;">
+            BACK TO TOP ↑
+        </a>
+
+    </div>
+
+</body>
+</html>

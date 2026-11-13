@@ -1,0 +1,354 @@
+/* ==============================
+   1. 全站基本设置
+   ============================== */
+
+body {
+    margin: 0;
+    background-color: #101010;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    line-height: 1.15;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ==============================
+   2. 网站顶部
+   ============================== */
+
+.header {
+    background-color: #111111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff4655;
+}
+
+/* 网站名称 */
+.logo {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff4655;
+}
+
+/* 导航 */
+.nav {
+    margin-top: 15px;
+}
+
+.nav a {
+    display: inline-block;
+    margin: 5px 12px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ff4655;
+}
+
+
+/* ==============================
+   3. 首页大照片区域
+   ============================== */
+
+/* 首页视频区域 */
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #202020;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* 背景视频 */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 视频上方的文字 */
+.hero-content {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.small-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 46px;
+    margin: 25px 0;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+
+/* ==============================
+   4. 按钮
+   ============================== */
+
+.button {
+    display: inline-block;
+    background-color: #ff4655;
+    color: #ffffff;
+
+    padding: 15px 25px;
+    margin-top: 15px;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+    border: 1px solid #ff4655;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+}
+
+
+/* ==============================
+   5. 共用内容区域
+   ============================== */
+
+.section {
+    padding: 60px 20px;
+}
+
+.section-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-label {
+    color: #ff4655;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin: 15px 0 25px;
+}
+
+.section h3 {
+    font-size: 25px;
+}
+
+
+/* ==============================
+   6. 白色背景区域
+   ============================== */
+
+.light-section {
+    background-color: #f2f0eb;
+    color: #171717;
+}
+
+
+/* ==============================
+   7. 黑色背景区域
+   ============================== */
+
+.dark-section {
+    background-color: #101010;
+    color: #ffffff;
+}
+
+
+/* ==============================
+   8. 社团介绍和活动照片
+   ============================== */
+
+.feature-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    border-bottom: 5px solid #ff4655;
+}
+
+
+/* ==============================
+   9. 游戏介绍卡片
+   ============================== */
+
+.game-card {
+    background-color: #1c1c1c;
+    border: 1px solid #444444;
+    margin: 30px 0;
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+.tag {
+    color: #ff8892;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* ==============================
+   10. 视频区域
+   ============================== */
+
+.video-section {
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+.club-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    background-color: #000000;
+}
+
+.media-caption {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   11. 示例活动说明
+   ============================== */
+
+.notice {
+    border-left: 4px solid #ff4655;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   12. 加入社团区域
+   ============================== */
+
+.join-section {
+    background-color: #b51f30;
+    color: #ffffff;
+    text-align: center;
+}
+
+.join-section .section-label {
+    color: #ffffff;
+}
+
+.button-white {
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+}
+
+.button-white:hover {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+
+
+/* ==============================
+   13. 页脚
+   ============================== */
+
+.footer {
+    background-color: #111111;
+    color: #bbbbbb;
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer a {
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+/* ==============================
+   14. 小屏幕调整
+   这是一个简单的补充写法：
+   屏幕宽度不超过 600px 时使用。
+   ============================== */
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section-content {
+        width: 100%;
+    }
+}
